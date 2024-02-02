@@ -8,5 +8,13 @@
         "32": "images/logo-32x32.png",
         "48": "images/logo-48x48.png",
         "128": "images/logo-128x128.png"
-      }
+    },
+    "content_scripts": [
+        {
+          "js": ["scripts/trademe.js"],
+          "matches": [
+            "*://*.trademe.co.nz/*"
+          ]
+        }
+    ]
   }

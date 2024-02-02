@@ -1,4 +1,21 @@
 {
   "projectName": "trademeplus",
-  "projectOwner": "catdogmat"
+  "projectOwner": "catdogmat",
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "Neale2",
+      "name": "Neale2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/104478727?v=4",
+      "profile": "https://github.com/Neale2",
+      "contributions": [
+        "ideas"
+      ]
+    }
+  ]
 }

@@ -13,8 +13,12 @@
         {
           "js": ["scripts/trademe.js"],
           "matches": [
-            "*://*.trademe.co.nz/*"
+            "*://www.trademe.co.nz/*"
           ]
         }
-    ]
+    ],
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": "images/logo-32x32.png"
+      }
   }

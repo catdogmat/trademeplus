@@ -4,19 +4,10 @@
   "files": [
     "README.md"
   ],
-  "commitType": "docs",
+  "commitType": "contributor",
   "commitConvention": "angular",
   "contributorsPerLine": 7,
   "contributors": [
-    {
-      "login": "Neale2",
-      "name": "Neale2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/104478727?v=4",
-      "profile": "https://github.com/Neale2",
-      "contributions": [
-        "ideas"
-      ]
-    },
     {
       "login": "catdogmat",
       "name": "Finn",
@@ -24,6 +15,15 @@
       "profile": "https://github.com/catdogmat",
       "contributions": [
         "code"
+      ]
+    },
+    {
+      "login": "Neale2",
+      "name": "Neale2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/104478727?v=4",
+      "profile": "https://github.com/Neale2",
+      "contributions": [
+        "ideas"
       ]
     }
   ]

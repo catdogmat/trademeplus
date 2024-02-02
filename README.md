@@ -6,3 +6,14 @@ A Chrome Extension that improves Trade Me (and other trading sites) with extra f
 ## Features
 
 - 🔎 Show how many people are watching a item in search results
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->

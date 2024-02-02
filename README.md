@@ -15,8 +15,8 @@ A Chrome Extension that improves Trade Me (and other trading sites) with extra f
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Neale2"><img src="https://avatars.githubusercontent.com/u/104478727?v=4?s=100" width="100px;" alt="Neale2"/><br /><sub><b>Neale2</b></sub></a><br /><a href="#ideas-Neale2" title="Ideas, Planning, & Feedback">🤔</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/catdogmat"><img src="https://avatars.githubusercontent.com/u/45089908?v=4?s=100" width="100px;" alt="Finn"/><br /><sub><b>Finn</b></sub></a><br /><a href="#code-catdogmat" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Neale2"><img src="https://avatars.githubusercontent.com/u/104478727?v=4?s=100" width="100px;" alt="Neale2"/><br /><sub><b>Neale2</b></sub></a><br /><a href="#ideas-Neale2" title="Ideas, Planning, & Feedback">🤔</a></td>
     </tr>
   </tbody>
 </table>

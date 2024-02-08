@@ -1,0 +1,20 @@
+{
+    "features": [
+        {
+            "id": "watchlisters_in_searches",
+            "name": "Searchlisters",
+            "description": "Shows the amount of watchlisters on a search result card.",
+            "requires": null,
+            "public": true,
+            "broken": false,
+            "depreciated": false,
+            "migration": {
+                "migrated": false,
+                "migratedTo": null
+            },
+            "files": [
+                "searchlisters/watchlisters_in_searches.js"
+            ]
+        }
+    ]
+}

@@ -17,8 +17,23 @@
           ]
         }
     ],
+    "permissions": [
+      "storage",
+      "unlimitedStorage",
+      "scripting"
+    ],
+    "host_permissions": [
+      "*://www.trademe.co.nz/*"
+    ],  
+    "web_accessible_resources": [{ 
+      "resources": ["/images/*", "/html/*", "/features/*", "/themes/*"],
+      "matches": ["<all_urls>"]
+    }],
     "action": {
         "default_popup": "popup/popup.html",
         "default_icon": "images/logo-32x32.png"
-      }
+    },
+    "background": {
+      "service_worker": "background/background.js"
+    }
   }

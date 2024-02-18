@@ -131,3 +131,6 @@ dist
 
 # pem files
 *.pem
+
+# build files
+*.crx

@@ -1,1 +1,5 @@
-chrome.tabs.create({active: true, url: "https://www.trademe.co.nz/a/my-trade-me/trademeplus"});
+if (chrome.runtime.openOptionsPage) {
+    chrome.runtime.openOptionsPage();
+} else {
+    window.open(chrome.runtime.getURL('settings/options.html'));
+}

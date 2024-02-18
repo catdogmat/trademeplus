@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Trade Me Plus",
     "description": "A Chrome Extension that improves Trade Me (and other trading sites) with extra features",
-    "version": "1.0",
+    "version": "1.0.0",
     "icons": {
         "16": "images/logo-16x16.png",
         "32": "images/logo-32x32.png",

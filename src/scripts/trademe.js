@@ -19,7 +19,7 @@ console.log(
 
 
 // Fetch the manifest.json file and inject all the scripts
-fetch(chrome.runtime.getURL('features/manifest.json'))
+fetch(chrome.runtime.getURL('features/featuremanifest.json'))
 .then(response => response.json())
 .then(data => {
     // Get all the scripts
@@ -76,7 +76,7 @@ fetch(chrome.runtime.getURL('features/manifest.json'))
 // TODO: This is a very long TODO list.
 
 // // Injecting CSS
-// fetch(chrome.runtime.getURL('themes/manifest.json'))
+// fetch(chrome.runtime.getURL('themes/thememanifest.json'))
 // .then(response => response.json())
 // .then(data => {
 //     var themes = [];

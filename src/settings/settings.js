@@ -19,7 +19,7 @@ function toggleTextbox(element, featid, settingid) {
 }
 
 
-fetch(chrome.runtime.getURL('features/manifest.json'))
+fetch(chrome.runtime.getURL('features/featuremanifest.json'))
 .then(response => response.json())
 .then(data => {
   console.log(data);

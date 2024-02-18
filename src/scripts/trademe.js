@@ -18,7 +18,6 @@ console.log(
 )
 
 
-// Injecting scripts
 // Fetch the manifest.json file and inject all the scripts
 fetch(chrome.runtime.getURL('features/manifest.json'))
 .then(response => response.json())
@@ -26,23 +25,42 @@ fetch(chrome.runtime.getURL('features/manifest.json'))
     // Get all the scripts
     var scripts = [];
 
+    // Create an array of promises for storage operations
+    var storagePromises = [];
+
     // Loop through the features and add the files to the scripts array
     for (let i = 0; i < data.features.length; i++) {
         for (let u = 0; u < data.features[i].files.length; u++) {
             // Add the file to the scripts array
-            scripts.push("features/" + data.features[i].files[u]);
+            storagePromises.push(
+                chrome.storage.sync.get([data.features[i].id + ".enabled"]).then((result) => {
+                    if (result[data.features[i].id + ".enabled"] != undefined) {
+                        if (result[data.features[i].id + ".enabled"]) {
+                            scripts.push("features/" + data.features[i].files[u]);
+                        }
+                    }
+                    console.log(result);
+                })
+            );
         }
     }
 
-    console.log("Injecting " + scripts.length.toString() + "scripts...");
+    // Wait for all storage operations to complete
+    return Promise.all(storagePromises)
+    .then(() => {
+        console.log("Injecting " + scripts.length.toString() + " scripts...");
 
-    (async () => {
-        // Send a message to the background script to inject the scripts (why did you have to make this so complicated chrome?)
-        const response = await chrome.runtime.sendMessage({command: "internals.injecting.injectScripts", args: {scripts: scripts}});
-
+        // Send a message to the background script to inject the scripts
+        return chrome.runtime.sendMessage({ command: "internals.injecting.injectScripts", args: { scripts: scripts }});
+    })
+    .then(() => {
         console.log("Injected scripts!");
-    })();
+    })
+    .catch(error => {
+        console.error("Error:", error);
+    });
 });
+
 
 
 // TODO: I really need to add theme support, but first settings and stuff.

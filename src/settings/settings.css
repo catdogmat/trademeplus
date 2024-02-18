@@ -1,0 +1,11 @@
+body {
+    background-color: #148fe2;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+body {
+  background: linear-gradient(300deg,deepskyblue,white);
+  background-size: 120% 120%;
+  animation: gradient-animation 12s ease infinite;
+}

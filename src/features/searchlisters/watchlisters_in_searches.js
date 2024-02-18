@@ -6,6 +6,7 @@
     * Thanks for using/contributing to our extension!
 */
 
+
 // Gets a listing number from a URL using regex, this is bearly readable
 // TODO: Make this more readable
 const getlistingNumber = (url) => (url.match(/\/listing\/(\d+)$/) || [])[1] || null;
@@ -18,12 +19,11 @@ function setWatchlistedAmountFromCard(card) {
         var parser = new DOMParser();
         var doc = parser.parseFromString(data, 'text/html');
         var elements = doc.getElementsByClassName('tm-marketplace-buyer-options__watchers-count');
-        // FIXME: Don't use innerHTML, use textContent because "cookies" and "security"... i hate this
         if (elements.length > 0) {
             var cardlocation = card.getElementsByClassName('tm-marketplace-search-card__location')[0]
-            cardlocation.innerHTML = cardlocation.innerHTML + '    |    ' + elements[0].textContent
+            cardlocation.textContent = cardlocation.textContent + '    |    ' + elements[0].textContent
         } else {
-            cardlocation.innerHTML = cardlocation.innerHTML + '    |    ' + '0 other watchers'
+            cardlocation.textContent = cardlocation.textContent + '    |    ' + '0 other watchers'
         }
     });
 }

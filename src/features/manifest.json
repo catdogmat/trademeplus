@@ -4,6 +4,7 @@
             "id": "watchlisters_in_searches",
             "name": "Searchlisters",
             "description": "Shows the amount of watchlisters on a search result card.",
+            "settings": [],
             "requires": null,
             "public": true,
             "broken": false,
